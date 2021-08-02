@@ -11,7 +11,7 @@ function Routes(){
     return(
         <BrowserRouter>
             <Switch>
-                <Route path="/" exact component={Main} exact />
+                <Route path="/" exact component={Main} />
                 <Route path="/Personagens" component={Personagens} />
                 <Route path="/Objetos" component={Objetos} />
             </Switch>       

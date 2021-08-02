@@ -35,7 +35,7 @@ export default class App extends React.Component {
     
 
   render() {
-    const { objetos,nomeObjeto, imagemUrlObjeto, editando, indexEditando } =
+    const { objetos, editando, indexEditando } =
       this.state;
 
     return (
@@ -55,7 +55,7 @@ export default class App extends React.Component {
             {objetos.map((f, index) => (
               <li key={index}>
                 <h3>{f.name}</h3>
-                <img src={f.imagemUrl} />
+                <img src={f.imagemUrl} alt={f.name} />
                 <br />
                 
               </li>
